@@ -1,4 +1,4 @@
-package org.avn.codility;
+package org.avn.programs;
 
 /**
  * Hello world!

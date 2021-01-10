@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility.prefix.sums;
 
 public class GenomicRangeQuerySol3 {
     public int[] solution(String S, int[] P, int[] Q) {

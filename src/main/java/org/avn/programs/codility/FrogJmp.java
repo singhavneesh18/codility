@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility;
 
 public class FrogJmp {
 

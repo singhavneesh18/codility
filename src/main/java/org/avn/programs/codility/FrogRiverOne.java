@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility;
 
 public class FrogRiverOne {
     public int solution(int X, int[] A) {

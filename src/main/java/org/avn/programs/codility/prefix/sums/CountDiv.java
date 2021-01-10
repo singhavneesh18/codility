@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility.prefix.sums;
 
 public class CountDiv {
     public int solution(int A, int B, int K) {

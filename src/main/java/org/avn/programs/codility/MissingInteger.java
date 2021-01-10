@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility;
 
 import java.util.HashSet;
 import java.util.Set;

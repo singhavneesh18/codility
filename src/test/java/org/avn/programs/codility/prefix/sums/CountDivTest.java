@@ -1,5 +1,6 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility.prefix.sums;
 
+import org.avn.programs.codility.prefix.sums.CountDiv;
 import org.junit.Assert;
 import org.junit.Test;
 

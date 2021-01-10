@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility.prefix.sums;
 
 import java.util.Map;
 import java.util.regex.Pattern;

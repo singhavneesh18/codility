@@ -1,4 +1,4 @@
-package org.avn.codility.progs;
+package org.avn.programs.codility;
 
 import java.util.ArrayList;
 import java.util.Arrays;
