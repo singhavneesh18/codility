@@ -11,23 +11,18 @@ public class NumberOfDiscIntersections {
             // check on right hand side
             final int i1 = length - 1 - i;
             int toRight = A[i] >= i1 ? i1 : A[i];
-
-            result += toRight;
-        }
-
-        int toLeft = 0;
-        for (int l = 0; l < i; l++) {
-            final int i2 = A[l] + l - i;
-            final boolean alreadyIntersect = i2 >= 0;
-            if (A[i] + i2 >= 0 && !alreadyIntersect) {
-                toLeft++;
+            int toLeft = 0;
+            for (int l = 0; l < i; l++) {
+                final int i2 = A[l] + l - i;
+                final boolean alreadyIntersect = i2 >= 0;
+                if (A[i] + i2 >= 0 && !alreadyIntersect) {
+                    toLeft++;
+                }
             }
+            result += toRight + toLeft;
         }
-
-        result += toRight + toLeft;
 
         return (result > 10000000) ? -1 : (int) result;
-
     }
 
 
