@@ -1,6 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.5.3'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version "${spring_boot_version}"
+	id 'io.spring.dependency-management' version "${spring_dependency_management}"
 	id 'java'
 }
 
@@ -13,10 +13,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'junit:junit:4.11'
-	testImplementation 'org.testng:testng:7.4.0'
+	implementation "org.springframework.boot:spring-boot-starter:${spring_boot_version}"
+	testImplementation "org.springframework.boot:spring-boot-starter-test:${spring_boot_version}"
+	testImplementation "junit:junit:${junit_version}"
+	testImplementation "org.testng:testng:${testing_version}"
 }
 
 test {
