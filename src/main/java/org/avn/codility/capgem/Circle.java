@@ -1,6 +1,6 @@
 package org.avn.codility.capgem;
 
-public class Circle implements Shape{
+public class Circle implements Shape {
 
 
     private double radius;

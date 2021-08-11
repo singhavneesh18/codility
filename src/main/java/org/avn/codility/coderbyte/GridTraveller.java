@@ -24,23 +24,23 @@ Solution Notes
  */
 public class GridTraveller {
 
-    public long solution_1(int m, int n){
+    public long solution_1(int m, int n) {
         if (m == 1 && n == 1) return 1;
         if (m == 0 || n == 0) return 0;
-        return solution_1(m-1,n) + solution_1(m,n-1);
+        return solution_1(m - 1, n) + solution_1(m, n - 1);
     }
 
-    public long solution_3(int m, int n){
+    public long solution_3(int m, int n) {
         if (m == 1 || n == 1) return 1;
         if (m == 0 || n == 0) return 0;
-        return solution_3(m-1,n) + solution_3(m,n-1);
+        return solution_3(m - 1, n) + solution_3(m, n - 1);
     }
 
-    public long solution_2(int m, int n, Long[] memo){
+    public long solution_2(int m, int n, Long[] memo) {
         if (m == 1 || n == 1) return 1;
         if (m == 0 || n == 0) return 0;
-        if (memo[m*n] != null) return memo[m*n];
-        memo[m*n] = solution_2(m - 1, n, memo) + solution_2(m, n - 1, memo);
-        return memo[m*n];
+        if (memo[m * n] != null) return memo[m * n];
+        memo[m * n] = solution_2(m - 1, n, memo) + solution_2(m, n - 1, memo);
+        return memo[m * n];
     }
 }

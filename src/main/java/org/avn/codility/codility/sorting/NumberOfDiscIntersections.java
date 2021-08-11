@@ -26,7 +26,6 @@ public class NumberOfDiscIntersections {
     }
 
 
-
     /*
     100% correct
     Task Score 62%

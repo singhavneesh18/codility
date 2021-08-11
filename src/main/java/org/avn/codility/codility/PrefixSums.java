@@ -39,7 +39,7 @@ public class PrefixSums {
         System.out.println("==========================START=======================");
         System.out.println(Arrays.toString(data));
         int length = data.length;
-        if(0 ==length || position == length) {
+        if (0 == length || position == length) {
             return 0;
         }
         for (int i = 1; i < data.length; i++) {
@@ -50,7 +50,7 @@ public class PrefixSums {
         int startOfLoop = i1 > -1 ? i1 : 0;
         int maxCollection = 0;
         if (position == 0) {
-        return data[length> moves? moves: length-1];
+            return data[length > moves ? moves : length - 1];
 
         }
         for (int i = startOfLoop; i < position + 1; i++) {

@@ -1,6 +1,6 @@
 package org.avn.codility.capgem;
 
-public class Square implements Shape{
+public class Square implements Shape {
 
     private double sideLength;
 
@@ -23,7 +23,7 @@ public class Square implements Shape{
 
     @Override
     public double totalDistance() {
-        return 4* getSideLength();
+        return 4 * getSideLength();
     }
 
     @Override

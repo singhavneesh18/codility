@@ -1,7 +1,5 @@
 package org.avn.codility.codility.sorting;
 
-import org.junit.Rule;
-import org.junit.rules.Timeout;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -10,6 +8,7 @@ import org.testng.annotations.Test;
 public class NumberOfDiscIntersectionsTest {
 
     private NumberOfDiscIntersections numberOfDiscIntersections;
+
     @BeforeTest
     public void beforeTest() {
         numberOfDiscIntersections = new NumberOfDiscIntersections();
@@ -17,8 +16,8 @@ public class NumberOfDiscIntersectionsTest {
 
     @DataProvider(name = "testSuite1")
     public Object[][] createData() {
-        return new Object[][] { //142110 // 041210
-                new Object [] { new int[] {1,5,2,1,4,0},11},
+        return new Object[][]{ //142110 // 041210
+                new Object[]{new int[]{1, 5, 2, 1, 4, 0}, 11},
 //                new Object [] { new int [] { 2, 1, 0, 4 }, 6 },
 //                new Object [] { new int [] {  }, 0 },
 //                new Object [] { new int [] { 1 }, 0 },
@@ -35,16 +34,16 @@ public class NumberOfDiscIntersectionsTest {
 
     @Test(dataProvider = "testSuite1")
     public void testSolution(int[] aInput, int aExpected) {
-        Assert.assertEquals(numberOfDiscIntersections.solution(aInput),aExpected);
+        Assert.assertEquals(numberOfDiscIntersections.solution(aInput), aExpected);
     }
 
     @Test(dataProvider = "testSuite1")
     public void testSolution_working_timeouts(int[] aInput, int aExpected) {
-        Assert.assertEquals(numberOfDiscIntersections.solution_working_timeouts(aInput),aExpected);
+        Assert.assertEquals(numberOfDiscIntersections.solution_working_timeouts(aInput), aExpected);
     }
 
     @Test(dataProvider = "testSuite1")
     public void testSolution_working_81(int[] aInput, int aExpected) {
-        Assert.assertEquals(numberOfDiscIntersections.solution_working_81(aInput),aExpected);
+        Assert.assertEquals(numberOfDiscIntersections.solution_working_81(aInput), aExpected);
     }
 }

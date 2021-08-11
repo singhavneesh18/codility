@@ -6,6 +6,7 @@ public interface Shape {
 
     // Parameter
     double totalDistance();
+
     int numberOfSides();
 
 }

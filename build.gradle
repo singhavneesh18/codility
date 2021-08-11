@@ -1,7 +1,7 @@
 plugins {
-	id 'org.springframework.boot' version "${spring_boot_version}"
-	id 'io.spring.dependency-management' version "${spring_dependency_management}"
-	id 'java'
+    id 'org.springframework.boot' version "${spring_boot_version}"
+    id 'io.spring.dependency-management' version "${spring_dependency_management}"
+    id 'java'
 }
 
 group = 'org.avn.codility'
@@ -9,16 +9,16 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '15'
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation "org.springframework.boot:spring-boot-starter:${spring_boot_version}"
-	testImplementation "org.springframework.boot:spring-boot-starter-test:${spring_boot_version}"
-	testImplementation "junit:junit:${junit_version}"
-	testImplementation "org.testng:testng:${testing_version}"
+    implementation "org.springframework.boot:spring-boot-starter:${spring_boot_version}"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${spring_boot_version}"
+    testImplementation "junit:junit:${junit_version}"
+    testImplementation "org.testng:testng:${testing_version}"
 }
 
 test {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }

@@ -50,7 +50,7 @@ public class MergeSort {
     }
 
     public static void main(String args[]) {
-        int[] array = {12, 1, 10, 5,50, 5, 15, 0,45,-1};
+        int[] array = {12, 1, 10, 5, 50, 5, 15, 0, 45, -1};
         mergeSort(array, array.length);
 //        Arrays.sort(array);
         System.out.println(Arrays.toString(array));

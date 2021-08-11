@@ -11,12 +11,12 @@ public class PermCheck {
         }
 
         Set<Integer> set = new HashSet<>();
-        for (int i= 0; i<A.length;i++) {
+        for (int i = 0; i < A.length; i++) {
             set.add(A[i]);
         }
 
-        for (int i=1; i<= A.length; i++) {
-            if(!set.contains(i)){
+        for (int i = 1; i <= A.length; i++) {
+            if (!set.contains(i)) {
                 return 0;
             }
         }

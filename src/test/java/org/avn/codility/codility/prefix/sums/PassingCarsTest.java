@@ -51,13 +51,13 @@ Copyright 2009–2020 by Codility Limited. All Rights Reserved. Unauthorized cop
     @Test
     public void testPassingCarsSolution() {
         final PassingCars passingCars = new PassingCars();
-        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 0, 1, 1}),5);
-        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 0, 1, 0}),3);
-        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 1, 0, 1, 1, 1, 0, 1}),11);
-        Assert.assertEquals(passingCars.solution(new int[]{0, 0, 1, 0, 1, 1}),8);
-        Assert.assertEquals(passingCars.solution(new int[]{1, 1, 0, 1, 0, 1, 1}),5);
-        Assert.assertEquals(passingCars.solution(new int[]{1,1,1,1,1,1,1,1, 1, 0, 1, 0, 1, 1}),5);
-        Assert.assertEquals(passingCars.solution(new int[]{ 0, 1, 0, 1, 1,0,1,1,1,0,1,1,1,1,1, 1,0,1,0}),43);
+        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 0, 1, 1}), 5);
+        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 0, 1, 0}), 3);
+        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 1, 0, 1, 1, 1, 0, 1}), 11);
+        Assert.assertEquals(passingCars.solution(new int[]{0, 0, 1, 0, 1, 1}), 8);
+        Assert.assertEquals(passingCars.solution(new int[]{1, 1, 0, 1, 0, 1, 1}), 5);
+        Assert.assertEquals(passingCars.solution(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1}), 5);
+        Assert.assertEquals(passingCars.solution(new int[]{0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0}), 43);
         // 13+ 12+ 10 + 7 + 1 = 43
     }
 }
